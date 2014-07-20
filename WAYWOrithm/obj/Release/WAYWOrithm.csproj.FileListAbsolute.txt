@@ -1,0 +1,6 @@
+E:\Projects\WAYWOrithm\bin\WAYWOrithm.exe.config
+E:\Projects\WAYWOrithm\bin\WAYWOrithm.exe
+E:\Projects\WAYWOrithm\bin\WAYWOrithm.pdb
+E:\Projects\WAYWOrithm\WAYWOrithm\obj\Release\WAYWOrithm.csprojResolveAssemblyReference.cache
+E:\Projects\WAYWOrithm\WAYWOrithm\obj\Release\WAYWOrithm.exe
+E:\Projects\WAYWOrithm\WAYWOrithm\obj\Release\WAYWOrithm.pdb

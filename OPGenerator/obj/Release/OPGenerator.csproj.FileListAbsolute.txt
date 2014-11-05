@@ -1,0 +1,6 @@
+E:\Projects\WAYWOrithm\bin\OPGenerator.exe.config
+E:\Projects\WAYWOrithm\bin\OPGenerator.exe
+E:\Projects\WAYWOrithm\bin\OPGenerator.pdb
+E:\Projects\WAYWOrithm\OPGenerator\obj\Release\OPGenerator.csprojResolveAssemblyReference.cache
+E:\Projects\WAYWOrithm\OPGenerator\obj\Release\OPGenerator.exe
+E:\Projects\WAYWOrithm\OPGenerator\obj\Release\OPGenerator.pdb

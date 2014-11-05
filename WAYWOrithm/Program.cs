@@ -66,7 +66,7 @@ namespace WAYWOrithm {
 			return 1;
 		}
 
-		public ulong ID;
+		public ulong ID, Page;
 		public string AuthorName;
 		public string Content, Sanitized;
 		public Dictionary<Rating, ushort> Ratings = new Dictionary<Rating, ushort>();
@@ -77,8 +77,10 @@ namespace WAYWOrithm {
 			return 0;
 		}
 
-		public FPPost(ulong ID, string Author, string Content, string Sanitized, Dictionary<Rating, ushort> Ratings) {
+		public FPPost(ulong ID, ulong Page, string Author, string Content, string Sanitized,
+			Dictionary<Rating, ushort> Ratings) {
 			this.ID = ID;
+			this.Page = Page;
 			this.Ratings = Ratings;
 			AuthorName = Author;
 			this.Content = Content;
@@ -87,6 +89,7 @@ namespace WAYWOrithm {
 
 		public FPPost(JS_FPPost P) {
 			this.ID = ulong.Parse(P.id);
+			this.Page = P.page;
 			this.AuthorName = P.author.name;
 			this.Content = P.content.Trim();
 			this.Sanitized = P.sanitized_content.Replace("\r", "").Trim();
@@ -273,7 +276,7 @@ namespace WAYWOrithm {
 
 			List<string> IDs = new List<string>();
 			for (int i = 0; i < (Posts.Length < 25 ? Posts.Length : 25); i++)
-				IDs.Add(Posts[i].ID.ToString());
+				IDs.Add(Posts[i].AuthorName + ";" + Posts[i].ID.ToString() + ";" + Posts[i].Page.ToString());
 			Console.WriteLine(String.Join(",", IDs.ToArray()));
 		}
 	}
